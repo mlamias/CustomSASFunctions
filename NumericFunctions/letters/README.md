@@ -70,5 +70,61 @@ This shows example usage ***after*** running letters.sas
     end;
     run;
 
+### Example Usage Output:
+
+    1    options cmplib=sasuser.userfuncs;
+    2    data _null_;
+    3    do i = 1 to 30;
+    4        lowerletters=letters(i, "L");
+    5        upperletters=letters(i, "U");
+    6        put i lowerletters upperletters;
+    7    end;
+    8    run;
+    
+    1 a A
+    2 b B
+    3 c C
+    4 d D
+    5 e E
+    6 f F
+    7 g G
+    8 h H
+    9 i I
+    10 j J
+    11 k K
+    12 l L
+    13 m M
+    14 n N
+    15 o O
+    16 p P
+    17 q Q
+    18 r R
+    19 s S
+    20 t T
+    21 u U
+    22 v V
+    23 w W
+    24 x X
+    25 y Y
+    26 z Z
+    ERROR:  The first argument to the letters function must be an integer between 1 and 26.
+    ERROR:  The first argument to the letters function must be an integer between 1 and 26.
+    27 -1 -1
+    ERROR:  The first argument to the letters function must be an integer between 1 and 26.
+    ERROR:  The first argument to the letters function must be an integer between 1 and 26.
+    28 -1 -1
+    ERROR:  The first argument to the letters function must be an integer between 1 and 26.
+    ERROR:  The first argument to the letters function must be an integer between 1 and 26.
+    29 -1 -1
+    ERROR:  The first argument to the letters function must be an integer between 1 and 26.
+    ERROR:  The first argument to the letters function must be an integer between 1 and 26.
+    30 -1 -1
+    NOTE: DATA statement used (Total process time):
+          real time           0.16 seconds
+          cpu time            0.17 seconds
+
+
 			  		
 				
+
+
