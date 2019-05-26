@@ -20,15 +20,36 @@ This function returns a letter in the English alphabet corresponding to the posi
 
 
 ### Typical Inputs & Output:  
-
-| Input               |Output  |
-|---------------------|--|
-|letters(1, "U")                 |A  |
-|letters(2, "U")                 |B  |
-|letters(26, "u")                |Z  |
-|letters(1, "L")                 |a  |
-|letters(24, "d")                |-1 is the returned value<br/>ERROR: The second argument to the letters function must be one of:<br> U, u, L, or l.  |
-|letters(30, "U")  |-1<br/>ERROR: The second argument to the letters function must be one of:<br/> U, u, L, or l.  |
+<table>
+<tr>
+<td><b>Input:</b></td>
+<td><b>Output:</b></td>
+</tr>
+<tr>
+<td>letters(1, "U") </td>
+<td>A</td>
+</tr>
+<tr>
+<td>letters(2, "U") </td>
+<td>B</td>
+</tr>
+<tr>
+<td>letters(26, "U")</td>
+<td>Z</td>
+</tr>
+<tr>
+<td>letters(1, "L")</td>
+<td>a</td>
+</tr>
+<tr>
+<td>letters(24, "d")</td>
+<td>-1 is the returned value<br/>ERROR: The second argument to the letters function must be one of:<br> U, u, L, or l.</td>
+</tr>
+<tr>
+<td>letters(30, "U")</td>
+<td>-1<br/>ERROR: The second argument to the letters function must be one of:<br/> U, u, L, or l. </td>
+</tr>
+</table>
 
 ### Example Usage:
 This shows example usage ***after*** running letters.sas

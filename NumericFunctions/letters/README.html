@@ -63,41 +63,37 @@
 </tr>
 </tbody>
 </table><h3 id="typical-inputs--output">Typical Inputs &amp; Output:</h3>
-
 <table>
-<thead>
-<tr>
-<th>Input</th>
-<th>Output</th>
+<tbody><tr>
+<td><b>Input:</b></td>
+<td><b>Output:</b></td>
 </tr>
-</thead>
-<tbody>
 <tr>
-<td>letters(1, “U”)</td>
+<td>letters(1, "U") </td>
 <td>A</td>
 </tr>
 <tr>
-<td>letters(2, “U”)</td>
+<td>letters(2, "U") </td>
 <td>B</td>
 </tr>
 <tr>
-<td>letters(26, “u”)</td>
+<td>letters(26, "U")</td>
 <td>Z</td>
 </tr>
 <tr>
-<td>letters(1, “L”)</td>
+<td>letters(1, "L")</td>
 <td>a</td>
 </tr>
 <tr>
-<td>letters(24, “d”)</td>
+<td>letters(24, "d")</td>
 <td>-1 is the returned value<br>ERROR: The second argument to the letters function must be one of:<br> U, u, L, or l.</td>
 </tr>
 <tr>
-<td>letters(30, “U”)</td>
-<td>-1<br>ERROR: The second argument to the letters function must be one of:<br> U, u, L, or l.</td>
+<td>letters(30, "U")</td>
+<td>-1<br>ERROR: The second argument to the letters function must be one of:<br> U, u, L, or l. </td>
 </tr>
-</tbody>
-</table><h3 id="example-usage">Example Usage:</h3>
+</tbody></table>
+<h3 id="example-usage">Example Usage:</h3>
 <p>This shows example usage <em><strong>after</strong></em> running letters.sas</p>
 <pre><code>options cmplib=sasuser.userfuncs;
 data _null_;
