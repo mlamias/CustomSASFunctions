@@ -47,6 +47,6 @@ where `<FUNCTION NAME>` is the name of the function you want to remove.  For exa
    proc fcmp outlib=sasuser.userfuncs;
         deletefunc letters;
    run;
-      ```
+   ```      
 
 
