@@ -404,7 +404,7 @@ $(document).ready(function () {
 <h3>How do I execute these custom functions.</h3>
 <p>Once you have run the SAS scripts that define the custom functions, you simply call the function like any other function in SAS, except that you should place the following at the top of your code:</p>
 <p><code>{sas eval=FALSE} options cmplib=sasuser.userfuncs;</code></p>
-<p>So, for example, if you wanted to run the <code>letters</code> function, which converts values like 1, 2, 26 to A, B, and Z respectively, then, after running the main letters.sas script to create the function, you’d run something like the following:</p>
+<p>So, for example, if you wanted to run the <code>letters</code> function, which converts values like 1, 2, 26 to A, B, and Z respectively, then, after running the main letters.sas script to create the function, you’d run something like the following (Note the options cmplib statement):</p>
 <p><code>{sas eval=FALSE} options cmplib=sasuser.userfuncs; data _null_; do i = 1 to 30;     lowerletters=letters(i, &quot;L&quot;);     upperletters=letters(i, &quot;U&quot;);     put i lowerletters upperletters; end; run;</code></p>
 </div>
 <div id="how-do-i-remove-these-custom-functions-form-my-sas-system" class="section level3">

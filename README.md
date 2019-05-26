@@ -18,7 +18,7 @@ Once you have run the SAS scripts that define the custom functions, you simply c
 options cmplib=sasuser.userfuncs;
 ```
 
-So, for example, if you wanted to run the `letters` function, which converts values like 1, 2, 26 to A, B, and Z respectively, then, after running the main letters.sas script to create the function, you'd run something like the following:
+So, for example, if you wanted to run the `letters` function, which converts values like 1, 2, 26 to A, B, and Z respectively, then, after running the main letters.sas script to create the function, you'd run something like the following (Note the options cmplib statement):
 
 ```{sas eval=FALSE}
 options cmplib=sasuser.userfuncs;
